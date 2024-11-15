@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reto 3</string>
+    <string name="first_human">You go first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+    <string name="new_game">New Game</string>
+    <string name="score_initial">Human: 0 Ties: 0 Android: 0</string>
+    <string name="score_format">Human: %1$d Ties: %2$d Android: %3$d</string>
+</resources>
