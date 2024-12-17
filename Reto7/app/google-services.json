@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1055875174708",
+    "project_id": "tictactoegame-bcadc",
+    "storage_bucket": "tictactoegame-bcadc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055875174708:android:78ea1769e10b424ccb9561",
+        "android_client_info": {
+          "package_name": "com.example.reto1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd_RIrGTvvoUecEvo9XjVEdvrtoJ4q7PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
