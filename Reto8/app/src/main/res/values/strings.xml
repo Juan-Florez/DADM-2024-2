@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Reto8</string>
+    <!-- Agregar el array de opciones para clasificación -->
+    <string-array name="clasificaciones">
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+</resources>

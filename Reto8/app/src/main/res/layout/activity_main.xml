@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<!-- Campo de búsqueda por nombre -->
+<EditText
+    android:id="@+id/search_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="16dp"
+    android:hint="Buscar por nombre"
+    android:inputType="text"
+    app:layout_constraintBottom_toTopOf="@+id/search_clasificacion"
+    app:layout_constraintEnd_toStartOf="@+id/search_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+<!-- Campo de búsqueda por clasificación -->
+<EditText
+    android:id="@+id/search_clasificacion"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:hint="Buscar por clasificación"
+    android:inputType="text"
+    app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+    app:layout_constraintEnd_toStartOf="@+id/search_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/search_name" />
+
+<!-- Botón para aplicar el filtro -->
+<Button
+    android:id="@+id/search_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:text="Buscar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="@+id/search_clasificacion" />
+
+<!-- Botón de agregar -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="28dp"
+    android:layout_marginBottom="28dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@drawable/ic_add"
+    tools:ignore="MissingConstraints" />
+
+<!-- RecyclerView -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:paddingTop="?attr/actionBarSize"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/search_clasificacion"
+    app:layout_constraintVertical_bias="0.0" />
+
+<!-- Imagen vacía -->
+<ImageView
+    android:id="@+id/empty_imageview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="230dp"
+    android:alpha="0.1"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_empty" />
+
+<!-- Texto si no hay datos -->
+<TextView
+    android:id="@+id/no_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="No Data."
+    android:textSize="20sp"
+    android:alpha="0.4"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/empty_imageview" />
+
+<!-- Botón para resetear filtros -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/resetButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:clickable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/add_button"
+    app:layout_constraintHorizontal_bias="0.966"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/ic_reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
