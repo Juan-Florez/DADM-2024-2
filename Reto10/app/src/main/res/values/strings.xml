@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Reto10</string>
+    <string-array name="options_array">
+        <item>Filtrar por Nacionalidad</item>
+        <item>Filtrar por Año</item>
+        <item>Filtrar por Sexo</item>
+        <item>Estadísticas por Nacionalidad</item>
+        <item>Estadísticas por Año</item>
+        <item>Promedio de Edad</item>
+    </string-array>
+</resources>
